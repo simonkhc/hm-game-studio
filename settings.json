@@ -1,0 +1,18 @@
+{
+  "hooks": {
+    "pre-tool": "hooks/pre-tool.sh",
+    "post-tool": "hooks/post-tool.sh",
+    "pre-compact": "hooks/pre-compact.sh",
+    "post-compact": "hooks/post-compact.sh",
+    "session-start": "hooks/session-start.sh",
+    "session-stop": "hooks/session-stop.sh",
+    "notify": "hooks/notify.sh",
+    "detect-gaps": "hooks/detect-gaps.sh",
+    "pre-commit": "hooks/pre-commit.sh",
+    "post-commit": "hooks/post-commit.sh",
+    "pre-push": "hooks/pre-push.sh",
+    "post-checkout": "hooks/post-checkout.sh"
+  },
+  "version": "1.0.0",
+  "description": "Hook wiring configuration for HMGS. Compatible with Claude Code hook system. HMGS embeds equivalent checks directly in skills."
+}

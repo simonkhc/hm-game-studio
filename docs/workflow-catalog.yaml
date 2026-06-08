@@ -1,0 +1,129 @@
+# Hermes Game Studio — Workflow Catalog
+# Used to determine current phase and what comes next
+phases:
+  concept:
+    label: "Concept"
+    next_phase: systems-design
+    steps:
+      - id: brainstorm
+        name: "Brainstorm"
+        required: false
+      - id: game-concept
+        name: "Game Concept Document"
+        required: true
+        artifact: "design/gdd/game-concept.md"
+      - id: engine-setup
+        name: "Engine Setup"
+        required: true
+        artifact: "docs/technical-preferences.md"
+      - id: map-systems
+        name: "Systems Map"
+        required: true
+        artifact: "design/gdd/systems-index.md"
+
+  systems-design:
+    label: "Systems Design"
+    next_phase: technical-setup
+    steps:
+      - id: design-system
+        name: "System GDDs"
+        required: true
+        repeatable: true
+      - id: design-review
+        name: "Per-System Design Review"
+        required: true
+        repeatable: true
+      - id: review-all-gdds
+        name: "Cross-GDD Review"
+        required: true
+        artifact: "design/gdd/gdd-cross-review-*.md"
+
+  technical-setup:
+    label: "Technical Setup"
+    next_phase: pre-production
+    steps:
+      - id: architecture
+        name: "Architecture Document"
+        required: true
+        artifact: "docs/architecture/architecture.md"
+      - id: adrs
+        name: "Architecture Decisions (ADRs)"
+        required: true
+        min_count: 3
+        artifact: "docs/architecture/adr-*.md"
+      - id: architecture-review
+        name: "Architecture Review"
+        required: true
+      - id: control-manifest
+        name: "Control Manifest"
+        required: true
+        artifact: "docs/architecture/control-manifest.md"
+      - id: accessibility
+        name: "Accessibility Requirements"
+        required: true
+        artifact: "design/accessibility-requirements.md"
+
+  pre-production:
+    label: "Pre-Production"
+    next_phase: production
+    steps:
+      - id: ux-specs
+        name: "UX Specs"
+        required: true
+      - id: epics
+        name: "Create Epics"
+        required: true
+      - id: stories
+        name: "Create Stories"
+        required: true
+      - id: sprint-plan
+        name: "Sprint Plan"
+        required: true
+      - id: vertical-slice
+        name: "Vertical Slice"
+        required: true
+
+  production:
+    label: "Production"
+    next_phase: polish
+    steps:
+      - id: sprint-cycle
+        name: "Sprint Cycle"
+        required: true
+        repeatable: true
+      - id: story-lifecycle
+        name: "Story Lifecycle"
+        required: true
+        repeatable: true
+
+  polish:
+    label: "Polish"
+    next_phase: release
+    steps:
+      - id: performance
+        name: "Performance Profile"
+        required: false
+      - id: balance
+        name: "Balance Check"
+        required: false
+      - id: playtesting
+        name: "Playtesting"
+        required: true
+        min_count: 3
+      - id: polish-pass
+        name: "Polish Pass"
+        required: false
+
+  release:
+    label: "Release"
+    next_phase: null
+    steps:
+      - id: release-checklist
+        name: "Release Checklist"
+        required: true
+      - id: launch-checklist
+        name: "Launch Readiness"
+        required: true
+      - id: ship
+        name: "Ship"
+        required: true

@@ -1,0 +1,208 @@
+# Skill Testing — Catalog
+
+skills:
+  # Gate
+  gate-check:
+    category: gate
+    has_spec: false
+    last_tested: null
+    result: null
+
+  # Review
+  design-review:
+    category: review
+    has_spec: false
+    last_tested: null
+    result: null
+  code-review:
+    category: review
+    has_spec: false
+    last_tested: null
+    result: null
+  architecture-review:
+    category: review
+    has_spec: false
+    last_tested: null
+    result: null
+  review-all-gdds:
+    category: review
+    has_spec: false
+    last_tested: null
+    result: null
+
+  # Authoring
+  design-system:
+    category: authoring
+    has_spec: false
+    last_tested: null
+    result: null
+  quick-design:
+    category: authoring
+    has_spec: false
+    last_tested: null
+    result: null
+  architecture-decision:
+    category: authoring
+    has_spec: false
+    last_tested: null
+    result: null
+  art-bible:
+    category: authoring
+    has_spec: false
+    last_tested: null
+    result: null
+  create-architecture:
+    category: authoring
+    has_spec: false
+    last_tested: null
+    result: null
+  create-control-manifest:
+    category: authoring
+    has_spec: false
+    last_tested: null
+    result: null
+
+  # Pipeline
+  create-epics:
+    category: pipeline
+    has_spec: false
+    last_tested: null
+    result: null
+  create-stories:
+    category: pipeline
+    has_spec: false
+    last_tested: null
+    result: null
+  map-systems:
+    category: pipeline
+    has_spec: false
+    last_tested: null
+    result: null
+
+  # Analysis
+  balance-check:
+    category: analysis
+    has_spec: false
+    last_tested: null
+    result: null
+  tech-debt:
+    category: analysis
+    has_spec: false
+    last_tested: null
+    result: null
+  consistency-check:
+    category: analysis
+    has_spec: false
+    last_tested: null
+    result: null
+  security-audit:
+    category: analysis
+    has_spec: false
+    last_tested: null
+    result: null
+  perf-profile:
+    category: analysis
+    has_spec: false
+    last_tested: null
+    result: null
+
+  # Team
+  team-combat:
+    category: team
+    has_spec: false
+    last_tested: null
+    result: null
+  team-narrative:
+    category: team
+    has_spec: false
+    last_tested: null
+    result: null
+  team-ui:
+    category: team
+    has_spec: false
+    last_tested: null
+    result: null
+  team-release:
+    category: team
+    has_spec: false
+    last_tested: null
+    result: null
+  team-polish:
+    category: team
+    has_spec: false
+    last_tested: null
+    result: null
+  team-audio:
+    category: team
+    has_spec: false
+    last_tested: null
+    result: null
+  team-level:
+    category: team
+    has_spec: false
+    last_tested: null
+    result: null
+  team-live-ops:
+    category: team
+    has_spec: false
+    last_tested: null
+    result: null
+  team-qa:
+    category: team
+    has_spec: false
+    last_tested: null
+    result: null
+
+  # Sprint
+  sprint-plan:
+    category: sprint
+    has_spec: false
+    last_tested: null
+    result: null
+  sprint-status:
+    category: sprint
+    has_spec: false
+    last_tested: null
+    result: null
+  milestone-review:
+    category: sprint
+    has_spec: false
+    last_tested: null
+    result: null
+
+  # Utility
+  start:
+    category: utility
+    has_spec: false
+    last_tested: null
+    result: null
+  adopt:
+    category: utility
+    has_spec: false
+    last_tested: null
+    result: null
+  setup-engine:
+    category: utility
+    has_spec: false
+    last_tested: null
+    result: null
+  hotfix:
+    category: utility
+    has_spec: false
+    last_tested: null
+    result: null
+  project-stage-detect:
+    category: utility
+    has_spec: false
+    last_tested: null
+    result: null
+  help:
+    category: utility
+    has_spec: false
+    last_tested: null
+    result: null
+  test-setup:
+    category: utility
+    has_spec: false
+    last_tested: null
+    result: null
